@@ -1,0 +1,2 @@
+com.flashphoner.fpwcsapi
+string app_name
