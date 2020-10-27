@@ -35,8 +35,9 @@ import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
 
-    FloatingActionButton fab;
+    FloatingActionButton fab, vlog;
     RecyclerView grid;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         fab = findViewById(R.id.floatingActionButton);
+        vlog = findViewById(R.id.floatingActionButton2);
         grid = findViewById(R.id.grid);
 
         fab.setOnClickListener(new View.OnClickListener() {
@@ -52,6 +54,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(MainActivity.this, GoLive.class);
+                startActivity(intent);
+
+            }
+        });
+
+        vlog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, Vlog.class);
                 startActivity(intent);
 
             }

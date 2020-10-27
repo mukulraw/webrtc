@@ -19,6 +19,7 @@
     <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
 
     <application
+        android:name=".bean"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -26,7 +27,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Player"></activity>
+        <activity android:name=".VerticalFragmentVodPopularActivity"></activity>
+        <activity android:name=".Vlog" />
+        <activity android:name=".Player" />
         <activity
             android:name=".GoLive"
             android:screenOrientation="portrait" />

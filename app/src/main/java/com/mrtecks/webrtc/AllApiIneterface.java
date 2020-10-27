@@ -1,6 +1,8 @@
 package com.mrtecks.webrtc;
 
 
+import com.mrtecks.webrtc.videoListPOJO.videoListBean;
+
 import java.util.List;
 
 import retrofit2.Call;
@@ -15,5 +17,7 @@ public interface AllApiIneterface {
     @GET("rest-api/stream/find_all")
     Call<List<streamBean>> getStreams();
 
+    @POST("api/video_list_api.php")
+    Call<String> getVideos();
 
 }
