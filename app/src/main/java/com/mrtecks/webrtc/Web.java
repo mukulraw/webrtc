@@ -113,7 +113,7 @@ public class Web extends Fragment {
 
         URI u = null;
         try {
-            u = new URI("ws://65.0.117.139:8080");
+            u = new URI("ws://15.207.243.49:8080");
         } catch (URISyntaxException e) {
             e.printStackTrace();
         }
